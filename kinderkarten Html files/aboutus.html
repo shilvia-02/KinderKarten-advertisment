@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<title>
+aboutus</title>
+<style>
+*{
+margin:0;
+padding:0;
+font-family:Century Gothic;
+}
+.main{
+width:100%;
+height:1200px;
+position:relative;
+overflow:hidden;
+background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(2.png);
+background-size:cover;
+background-position:center;
+}
+nav{
+width:80%;
+position:sticky;
+margin:20px auto;
+display:flex;
+align-items:center;
+}
+.logo{
+flex-basis:20%;
+}
+.logo img{
+width:200px;
+}
+.nav-links{
+flex:1;
+text-align:right;
+}
+.nav-links ul li{
+display:inline-block;
+margin:0 20px;
+position:relative;
+}
+.nav-links ul li a{
+color:#fff;
+text-transform:uppercase;
+text-decoration:none;
+}
+.nav-links ul li::after{
+content:'';
+height:3px;
+width:0;
+background:#009688;
+position:absolute;
+left:0;
+bottom:-10px;
+transition:0.5s;
+}
+.nav-links ul li:hover::after{
+width:100%;
+}
+h1{
+color:#fff;
+margin-left:25%;
+font-size:80px;
+margin-top:50px;
+}
+.box{
+background:transparent;
+width:50%;
+margin-bottom:5%;
+margin-left:25%;
+border:10px ridge rgba(255,255,255,.2);
+padding:20px 4px 20px 20px;
+border-radius:5px;
+}
+
+.box h2{
+color:#fff;
+font-size:30px;
+font-weight:bold;
+margin-top:20px;
+margin-bottom:20px;
+}
+.box p{
+color:#009688;
+text-align:left;
+font-size:20px;
+margin-bottom:30px;
+margin-right:50px;
+}
+@media(max-width:768px){
+.box{
+flex-direction:coloumn;
+margin-bottom:100px;
+border:6px ridge rgba(255,255,255,.2);
+width:50%;
+height:30%;
+}
+h1{
+font-size:190%;
+}
+.box h2{
+font-size:100%;
+}
+.box p{
+font-size:60%;
+}
+.logo{
+flex-direction:coloumn;
+width:100%;
+}
+.logo img{
+width:100%;
+}
+nav{
+width:100%;
+}
+.nav-links{
+font-size:50%;
+}
+.nav-links ul li::after{
+height:2px;
+}
+}
+</style>
+<body>
+<div class ="main">
+<nav>
+<div class="logo">
+<img src = "mig_1.png"></div>
+<div class="nav-links">
+<ul>
+<li><a href="home.html">home</a>
+<li><a href="admission.html">admission</a>
+<li><a href="aboutus.html">about us</a>
+<li><a href="contactus.html">contact us</a>
+<li><a href="login.html">login</a>
+</ul>
+</nav>
+<h1>About us</h1>
+<div class="box">
+<h2> welcome to Mkids!!</h2>
+<p>MKids is recognized as India’s Most Respected Early Childhood Education Brand,
+ with over 21 years of experience, and has a presence in 350+ cities & 3 countries. 
+ The journey began in 2001 with 2 preschools and since then the group has consistently 
+ raised the bar for preschool education through its innovative and mindful curriculum – 
+ EUNOIA, which helps children grow holistically in a home-like environment.<br><br><a href="#">Read more.</a><br><br>
+
+MKids is a part of Lighthouse Learning, one of India's Leading Early 
+Childhood & K-12 Education groups. The group is committed to building a robust
+ foundation & new-age skills in future generations with
+student-centered goals that align its network of over 1,200 Pre-Schools and 45 Schools. 
+Lighthouse Learning Group delivers the joy of learning to over 150,000 children every day, 
+empowers more than 1000 women entrepreneurs and employs a talented workforce of over 10,000 people across
+ its offices and campuses. For more details, please visit:<a href="#"> www.sunflower-learning.com</a><br><br><a href="#">Read more.</a></p>
+</div>
+</div></div>
+</body>
+</html>

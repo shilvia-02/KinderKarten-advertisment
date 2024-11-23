@@ -1,0 +1,147 @@
+<html>
+<head>
+<title>
+project</title></head>
+<style>
+*{
+margin:0;
+padding:0;
+font-family:sans-serif;
+}
+.main{
+width:1317px;
+height:750px;
+position:relative;
+overflow:hidden;
+background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.png);
+background-size:cover;
+background-position:center;
+}
+nav{
+width:80%;
+position:sticky;
+margin:20px auto;
+z-index:1;
+display:flex;
+align-items:center;
+}
+.logo{
+flex-basis:20%;
+}
+.logo img{
+width:200px;
+}
+.nav-links{
+flex:1;
+text-align:right;
+}
+.nav-links ul li{
+list-style:none;
+display:inline-block;
+margin:0 20px;
+position:relative;
+}
+.nav-links ul li a{
+color:#fff;
+text-transform:uppercase;
+text-decoration:none;
+}
+.nav-links ul li::after{
+content:'';
+height:3px;
+width:0;
+background:#009688;
+position:absolute;
+left:0;
+bottom:-10px;
+transition:0.5s;
+}
+.nav-links ul li:hover::after{
+width:100%;
+}
+.feature{
+flex-basis:20%;
+}
+.feature img{
+width:600px;
+height:600px;
+position:absolute;
+top:150px;
+left:-150;
+border-radius:60%;
+}
+.content{
+width:100%;
+position:absolute;
+top:50%;
+transport:translatey(-50);
+text-align:center;
+color:#fff;
+}
+.content h1{
+font-size:40px;
+margin-bottom:15px;
+}
+.content p{
+font-size:15px;
+margin-bottom:25px;
+}
+button{
+width:200px;
+padding:15px 0;
+text-align:center;
+margin:20px 10px;
+border-radius:25px;
+font-weight:bold;
+border:2px solid #009688;
+background:transparent;
+color:#fff;
+cursor:pointer;
+position:relative;
+overflow:hidden;
+}
+span{
+background:#009688;
+height:100%;
+width:0;
+border-radius:25px;
+position:absolute;
+left:0;
+bottom:0;
+z-index:-1;
+transition:0.5s;
+}
+button:hover span{
+width:100%;
+}
+button:hover{
+border:none;
+}
+</style>
+<body>
+<div class ="main">
+<nav>
+<div class="logo">
+<img src = "mig_1.png"></div>
+<div class="nav-links">
+<ul>
+<li><a href="#">home</a>
+<li><a href="#">admission</a>
+<li><a href="#">about us</a>
+<li><a href="#">contact us</a>
+<li><a href="#">help</a>
+<li><a href="#">login</a>
+</ul>
+</nav>
+</div></div>
+<div class="feature">
+<img src ="kinder2.png"></div>
+<div class="content">
+<h1> ADMISSION OPEN <br> NOW <br> 2023-2024</h1>
+<p>(morning & evening shifts)</p>
+<div>
+<p>Download Mkids Now!!</p>
+<button type="button"><span></span>GOOGLE PLAY</button>
+<button type="button"><span></span>APP STORE</button>
+</body>
+</html>

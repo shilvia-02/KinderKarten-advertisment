@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<title>
+Home</title>
+<style>
+*{
+margin:0;
+padding:0;
+font-family:Century Gothic;
+}
+body{
+width:100%;
+height:775px;
+position:relative;
+overflow:hidden;
+background:linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)),url(bg1.jpg);
+background-size:cover;
+background-position:center;
+}
+.logo{
+flex-basis:20%;
+margin-left:550px;
+margin-bottom:200px;
+}
+.logo img{
+width:250px;
+margin-top:-50px;
+}
+.nav-links{
+flex:2;
+text-align:center;
+margin-right:-50px;
+margin-top:-250px;
+}
+.nav-links ul li{
+display:inline-block;
+margin:0 20px;
+position:relative;
+}
+.nav-links ul li a{
+color:#fff;
+text-decoration:none;
+}
+.nav-links ul li::after{
+content:'';
+height:3px;
+width:0;
+background:white;
+position:absolute;
+left:0;
+bottom:-10px;
+transition:0.5s;
+}
+.nav-links ul li:hover::after{
+width:100%;
+}
+.content{
+width:100%;
+position:absolute;
+top:50%;
+text-align:left;
+margin-left:100px;
+margin-top:100px;
+color:#fff;
+}
+.content h1{
+font-size:40px;
+margin-bottom:15px;
+}
+.content p{
+margin:25px -2px;
+font-size:17px;
+}
+button{
+padding:10px 50px;
+}
+button a{
+text-decoration:none;
+color:black;
+font-weight:bold;
+font-size:13px;
+}
+</style>
+<body>
+<div class ="main">
+<nav>
+<div class="logo">
+<img src = "log1.png"></div>
+<div class="nav-links">
+<ul>
+<li><a href="home.html">Home</a>
+<li><a href="shopbycat.html">Shop by Category</a>
+<li><a href="aboutus.html">Shop by Design</a>
+<li><a href="about_us.html">About</a>
+<li><a href="Contact_us.html">Contact</a>
+<li><a href="login1.html">Log in</a>
+</ul>
+</nav>
+</div></div>
+<div class="content">
+<p>Don't let a stain ruin your day.</p>
+<button type="submit"><a href="shopbycat.html">BUY NOW</button>
+</body>
+</html>

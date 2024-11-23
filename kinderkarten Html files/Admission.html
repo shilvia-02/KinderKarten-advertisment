@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<title>
+Admission</title>
+<style>
+*{
+margin:0;
+padding:0;
+font-family:Century Gothic;
+}
+.main{
+position:relative;
+overflow:hidden;
+background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(3.png);
+background-size:cover;
+background-position:center;
+}
+nav{
+width:80%;
+position:sticky;
+margin:20px auto;
+display:flex;
+align-items:center;
+}
+.logo{
+flex-basis:20%;
+}
+.logo img{
+width:200px;
+}
+.nav-links{
+flex:1;
+text-align:right;
+}
+.nav-links ul li{
+display:inline-block;
+margin:0 20px;
+position:relative;
+}
+.nav-links ul li a{
+color:#fff;
+text-transform:uppercase;
+text-decoration:none;
+}
+.nav-links ul li::after{
+content:'';
+height:3px;
+width:0;
+background:#009688;
+position:absolute;
+left:0;
+bottom:-10px;
+transition:0.5s;
+}
+.nav-links ul li:hover::after{
+width:100%;
+}
+
+.wrapper{
+width:50%;
+margin-left:20%;
+color:#fff;
+background:transparent;
+border:2px solid rgba(255,255,255,.2);
+border-radius:10px;
+padding:30px 40px ;
+}
+.wrapper h1{
+font-size:36px;
+text-align:center;
+}
+.wrapper p{
+font-size:15px;
+color:silver;
+text-align:center;
+}
+.wrapper .input-box{
+width:100%;
+height:5px;
+margin:80px -10px;
+}
+.input-box input{
+width:100%;
+height:100%;
+background:transparent;
+border:2px solid rgba(255,255,255,.2);
+border-radius:40px;
+font-size:16px;
+color:#fff;
+padding:20px 4px 20px 20px;
+}
+.input-box input::placeholder{
+color:#fff;
+}
+.wrapper .btn{
+width:100%;
+height:45px;
+background:#fff;
+border:none;
+border-radius:40px;
+box-shadow:0 0 10px rgba(0,0,0,-1);
+font-size:16px;
+color:#333;
+font-weight:bold;
+margin-top:30px;
+}
+textarea{
+width:100%;
+height:25px;
+background:transparent;
+border:2px solid rgba(255,255,255,.2);
+border-radius:40px;
+font-size:16px;
+color:#fff;
+padding:20px 4px 20px 20px;
+}
+.input-box textarea::placeholder{
+color:#fff;
+}
+#show{
+margin-right:70%;
+margin-top:1%;
+}
+#show1{
+margin-right:70%;
+margin-top:1%;
+}#show2{
+margin-right:70%;
+margin-top:1%;
+}#show3{
+margin-right:70%;
+margin-top:1%;
+}#show4{
+margin-right:70%;
+margin-top:1%;
+}#show5{
+margin-right:70%;
+margin-top:1%;
+}#show6{
+margin-right:70%;
+margin-top:1%;
+}#show7{
+margin-right:70%;
+margin-top:1%;
+}#show8{
+margin-right:70%;
+margin-top:1%;
+}#show9{
+margin-right:70%;
+margin-top:1%;
+}
+@media(max-width:768px){
+.wrapper{
+flex-direction:coloumn;
+margin:20% 20% 20% 20%;
+width:50%;
+height:40%;
+}
+.wrapper h1{
+font-size:100%;
+}
+.wrapper p{
+font-size:50%;
+}
+.wrapper .input-box{
+height:2%;
+margin:15px 0 36px;
+}
+.input-box input{
+font-size: 75%;
+    padding: 10px 4px 10px 10px;
+   }
+.wrapper .btn{
+height: 30px;
+    font-size: 75%;
+    font-weight: 800;
+    margin-top: 3px;
+	margin-left: 3%;
+    width: 100%;
+}
+.logo{
+flex-direction:coloumn;
+width:100%;
+}
+.logo img{
+width:100%;
+}
+nav{
+width:100%;
+}
+.nav-links{
+font-size:50%;
+}
+.nav-links ul li::after{
+height:2px;
+}
+textarea{
+height: 15px;
+    font-size: 75%;
+    padding: 10px 3px 10px 10px;
+}
+#show{
+font-size:55%;
+}
+}
+</style>
+<body>
+<div class ="main">
+<nav>
+<div class="logo">
+<img src = "mig_1.png"></div>
+<div class="nav-links">
+<ul>
+<li><a href="home.html">home</a>
+<li><a href="admission.html">admission</a>
+<li><a href="aboutus.html">aboutus</a>
+<li><a href="contactus.html">contactus</a>
+<li><a href="login.html">login</a>
+</ul>
+</nav>
+<div class="wrapper">
+<h1>Admission Form</h1>
+<p> Admission forms are processed within 48hrs, you will recieve 
+an email confrimationwithin we processed your admission</p>
+<div class="input-box">
+<input type="text" placeholder="Name of the child" id="uname"required></div>
+<p id ="show"></p>
+<div class="input-box">
+<input type="date" placeholder="Date of Birth" id="udob" required></div>
+<p id ="show1"></p>
+<div class="input-box">
+<input type="text" placeholder="Gender" id="ugender" required>
+</div>
+<p id ="show2"></p>
+<div class="input-box">
+<input type="text" placeholder="Parent's/Gardians Name" id="paname"required>
+</div>
+<p id ="show3"></p>
+<div class="input-box">
+<input type="text" placeholder="Parent's/Gardians Occupation" id="pocc" required></div>
+<p id ="show4"></p>
+<div class="input-box">
+<input type="text" placeholder="Language spoken at home" id="ulang" required></div>
+<p id ="show5"></p>
+<div class="input-box">
+<textarea placeholder="Residental address..." id="address" required="required"></textarea>
+</div>
+<p id ="show6"></p>
+<div class="input-box">
+<input type="text" placeholder="Pincode"id ="upin"  required></div>
+<p id ="show7"></p>
+<div class="input-box">
+<input type="email" placeholder="Email id" id="uemail" required></div>
+<p id ="show8"></p>
+<div class="input-box">
+<input type="text" name="text" placeholder="Contact number" id="contact" required>
+</div>
+<p id ="show9"></p>
+<button type="summit" class="btn" onclick="register()">Summit form</button>
+</div></div>
+<script>
+function register()
+{
+	var dob=document.getElementById('udob').value;
+	var gender=document.getElementById('ugender').value;
+	var pname=document.getElementById('paname').value;
+	var occ=document.getElementById('pocc').value;
+	var lang=document.getElementById('ulang').value;
+	var pin=document.getElementById('upin').value;
+	var add=document.getElementById('address').value;
+	var cnum=document.getElementById('contact').value;
+	var name=document.getElementById('uname').value;
+	var email=document.getElementById('uemail').value;
+	var emailpattern=/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+	var contactpattern=/^\d{10}$/;
+	var pinpattern=/^\d{6}$/;
+	if(name==""){
+	document.getElementById('show').innerHTML="*childname reqiured";
+	show.style="color:red;font-weight:bold;";
+	return false;
+	}
+	if( dob=="" ){
+	document.getElementById('show1').innerHTML="*dob reqiured";
+	show1.style="color:red;font-weight:bold;";
+	return false;
+	}	
+	if(gender==""){
+	document.getElementById('show2').innerHTML="*gender reqiured";
+	show2.style="color:red;font-weight:bold;";
+	return false;
+	}
+	if( pname=="" ){
+	document.getElementById('show3').innerHTML="*parents name reqiured";
+	show3.style="color:red;font-weight:bold;";
+	return false;
+	}
+	if( occ=="" ){
+	document.getElementById('show4').innerHTML="*parents Occupation reqiured";
+	show4.style="color:red;font-weight:bold;";
+	return false;
+	}	
+	if( lang=="" ){
+	document.getElementById('show5').innerHTML="*language reqiured";
+	show5.style="color:red;font-weight:bold;";
+	return false;
+	}
+	if( add=="" ){
+	document.getElementById('show6').innerHTML="*address reqiured";
+	show6.style="color:red;font-weight:bold;";
+	return false;
+	}
+	if( pin==""){
+	document.getElementById('show7').innerHTML=" *pin number reqiured";
+	show7.style="color:red;font-weight:bold;";
+	return false;
+	}
+	if(!pinpattern.test(pin)){
+	document.getElementById('show7').innerHTML="*pin number must be 6 numbers !!No charecters";
+	show7.style="color:red;font-weight:bold;";
+	return false;
+	}
+	if( email=="" ){
+	document.getElementById('show8').innerHTML="*email reqiured";
+	show8.style="color:red;font-weight:bold;";
+	return false;
+	}
+	if(!emailpattern.test(email)){
+	document.getElementById('show8').innerHTML="*Invalid email";
+	show8.style="color:red;font-weight:bold;";
+	return false;
+	}
+	if(cnum==""){
+	document.getElementById('show9').innerHTML="*contact number reqiured";
+	show9.style="color:red;font-weight:bold;";
+	return false;
+	}
+	if(!contactpattern.test(cnum)){
+	document.getElementById('show9').innerHTML="*contact number must be 10 numbers !!No charecters";
+	show9.style="color:red;font-weight:bold;";
+	return false;
+	}
+if(name!=""||cnum!=""||email!=""||pin!=""||add!=""||lang!=""||occ!=""||pname!=""||gender!=""||dob!=""){
+var ans=prompt("Do you want to summit??");
+	}
+if(ans=="yes"){
+		location.assign("file:///E:/shilvia%20html/home.html");
+	}
+}
+</script>
+</body>
+</html>
